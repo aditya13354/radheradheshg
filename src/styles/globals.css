@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #fff9f2;
+  --text: #2f2f2f;
+}
+
+.dark {
+  --bg: #1a1013;
+  --text: #f5e7ea;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@layer base {
+  ::selection {
+    background-color: #c89b3c;
+    color: #fff;
+  }
+}
+
+@layer components {
+  .container-px {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  .section {
+    @apply py-20 sm:py-24 lg:py-28;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-gold-600 dark:text-gold-300;
+  }
+
+  .eyebrow::before {
+    content: '';
+    @apply h-px w-6 bg-gold/60;
+  }
+
+  .heading-xl {
+    @apply font-display text-4xl leading-tight sm:text-5xl lg:text-6xl;
+  }
+
+  .heading-lg {
+    @apply font-display text-3xl leading-tight sm:text-4xl lg:text-5xl;
+  }
+
+  .text-gradient-gold {
+    @apply text-gold-600 dark:text-gold-300;
+  }
+
+  .glass-card {
+    @apply rounded-2xl border border-ink/10 bg-white shadow-soft dark:border-white/10 dark:bg-white/5;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply btn bg-maroon text-ivory hover:bg-maroon-700;
+  }
+
+  .btn-gold {
+    @apply btn border border-gold/50 bg-white text-maroon hover:border-gold hover:bg-gold/5 dark:bg-transparent dark:text-gold-100;
+  }
+
+  .btn-outline {
+    @apply btn border border-ink/20 bg-transparent text-ink hover:border-ink dark:border-gold/30 dark:text-gold-100;
+  }
+
+  .btn-whatsapp {
+    @apply btn bg-[#25D366] text-white hover:bg-[#1ebe5a];
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c89b3c;
+  border-radius: 999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
