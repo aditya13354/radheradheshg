@@ -33,15 +33,15 @@ const notoDevanagari = Noto_Sans_Devanagari({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Handcrafted Clay Karwa & Handicrafts | Saharanpur`,
-    template: `%s | ${siteConfig.name}`,
+    default: `Radhe Radhe SHG (radheradheshg) | Handmade Clay Karwa & Handicrafts | Saharanpur`,
+    template: `%s | Radhe Radhe SHG - radheradheshg.com`,
   },
   description: siteConfig.description,
   keywords: siteConfig.keywords,
   authors: [{ name: siteConfig.name, url: siteConfig.url }],
   creator: siteConfig.name,
   publisher: siteConfig.name,
-  applicationName: siteConfig.name,
+  applicationName: 'radheradheshg',
   category: 'Handicrafts',
   classification: 'Handicrafts, Clay Products, Women Self Help Group',
   alternates: {
@@ -56,8 +56,8 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     alternateLocale: 'hi_IN',
     url: siteConfig.url,
-    siteName: siteConfig.name,
-    title: `${siteConfig.name} | Handcrafted Clay Karwa & Handicrafts from Rural Women Artisans`,
+    siteName: 'radheradheshg - Radhe Radhe Self Help Group',
+    title: `radheradheshg | Handmade Clay Karwa & Handicrafts | Saharanpur, UP`,
     description: siteConfig.description,
     countryName: 'India',
     images: [

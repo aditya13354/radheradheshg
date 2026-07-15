@@ -6,7 +6,7 @@ export const siteConfig = {
   url: 'https://radheradheshg.com',
   tagline: 'Handcrafted Clay Creations, Made by Rural Women',
   description:
-    'Radhe Radhe Self Help Group crafts premium handmade clay Karwas, festive décor, decorative clay pots and customised handicrafts. Every purchase empowers rural women of Saharanpur, Uttar Pradesh. Wholesale, bulk & OEM orders welcome.',
+    'Radhe Radhe Self Help Group (radheradheshg.com) — premium handmade clay Karwas, festive décor, decorative pots and customised handicrafts by women artisans of Village Ugrah, Saharanpur, Uttar Pradesh. Wholesale, bulk & OEM orders. Contact: +91 9719266605.',
   phones: ['9719266605', '9719266606'],
   whatsapp: '919719266605',
   email: 'radheradheshg@gmail.com',
@@ -38,6 +38,12 @@ export const siteConfig = {
     yandex: '', // Yandex Webmaster verification code
   },
   keywords: [
+    // Brand name keywords (exact match for search)
+    'radheradheshg',
+    'radheradheshg.com',
+    'Radhe Radhe Self Help Group',
+    'Radhe Radhe SHG',
+    'Radhe Radhe SHG Saharanpur',
     // Primary product keywords
     'Handmade Karwa',
     'Clay Karwa',
