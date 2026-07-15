@@ -4,10 +4,17 @@ import { GalleryGrid } from '@/components/sections/GalleryGrid';
 import { CtaBand } from '@/components/sections/CtaBand';
 
 export const metadata: Metadata = {
-  title: 'Gallery',
+  title: 'Gallery | Handcrafted Clay Products & Women Artisans Photos',
   description:
-    'A premium gallery of handcrafted clay products, women artisans, workshop moments, manufacturing, events and exhibitions by Radhe Radhe Self Help Group.',
+    'Browse our premium gallery showcasing handcrafted clay Karwas, decorative pots, women artisans at work, workshop moments, manufacturing process, and events by Radhe Radhe Self Help Group, Saharanpur.',
+  keywords: ['Clay Karwa Photos', 'Handicraft Gallery', 'Women Artisans India', 'Handmade Products Gallery', 'Self Help Group Exhibition'],
   alternates: { canonical: '/gallery' },
+  openGraph: {
+    title: 'Gallery | Radhe Radhe Self Help Group',
+    description: 'See our handcrafted clay creations, artisans at work and exhibition moments.',
+    url: '/gallery',
+    type: 'website',
+  },
 };
 
 export default function GalleryPage() {

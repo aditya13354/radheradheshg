@@ -2,16 +2,15 @@ import Link from 'next/link';
 import { Phone, Mail, MapPin, Instagram, Facebook, Heart } from 'lucide-react';
 import { siteConfig } from '@/lib/site';
 import { footerLinks } from '@/lib/nav';
-import { whatsappLink, telLink, mailLink, waMessages } from '@/lib/whatsapp';
-import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
+import { telLink, mailLink } from '@/lib/whatsapp';
 
 export function Footer() {
   const { address } = siteConfig;
 
   return (
     <footer className="relative overflow-hidden bg-maroon-900 text-ivory">
-      <div className="container-px relative py-16">
-        <div className="grid gap-12 lg:grid-cols-4">
+      <div className="container-px relative py-10 sm:py-16">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3">
@@ -111,19 +110,10 @@ export function Footer() {
               Let&apos;s Connect
             </h3>
             <p className="mt-5 text-sm text-ivory/70">
-              Have a question, bulk order or custom requirement? We are one
-              message away.
+              Have a question, bulk order or custom requirement? Call us or tap
+              the WhatsApp button.
             </p>
-            <div className="mt-5 flex flex-col gap-3">
-              <a
-                href={whatsappLink(waMessages.general)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-whatsapp w-full"
-              >
-                <WhatsAppIcon className="h-4 w-4" />
-                Chat on WhatsApp
-              </a>
+            <div className="mt-5">
               <a href={telLink()} className="btn-gold w-full">
                 <Phone className="h-4 w-4" />
                 Call Now
@@ -140,7 +130,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-gold/15 pt-8 text-center sm:flex-row sm:text-left">
+        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-gold/15 pt-6 text-center sm:mt-14 sm:flex-row sm:pt-8 sm:text-left">
           <p className="text-xs text-ivory/60">
             &copy; {new Date().getFullYear()} {siteConfig.name}. All rights
             reserved.

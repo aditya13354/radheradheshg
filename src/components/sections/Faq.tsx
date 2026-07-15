@@ -18,7 +18,7 @@ export function Faq() {
         subtitle="Everything you need to know before you reach out. Still unsure? Message us on WhatsApp anytime."
       />
 
-      <div className="mx-auto mt-12 max-w-3xl space-y-4">
+      <div className="mx-auto mt-8 max-w-3xl space-y-3 sm:mt-12 sm:space-y-4">
         {faqs.map((faq, index) => {
           const isOpen = open === index;
           return (
@@ -32,7 +32,7 @@ export function Faq() {
                 aria-expanded={isOpen}
                 className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
               >
-                <span className="font-display text-base font-semibold text-maroon dark:text-gold-100">
+                <span className="font-display text-sm font-semibold text-maroon dark:text-gold-100 sm:text-base">
                   {faq.question}
                 </span>
                 <ChevronDown

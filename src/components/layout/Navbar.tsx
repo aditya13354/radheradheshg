@@ -7,12 +7,9 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { navLinks } from '@/lib/nav';
 import { siteConfig } from '@/lib/site';
-import { whatsappLink } from '@/lib/whatsapp';
-import { waMessages } from '@/lib/whatsapp';
 import { useScrollPosition } from '@/hooks/useScrollPosition';
 import { cn } from '@/lib/utils';
 import { ThemeToggle } from './ThemeToggle';
-import { WhatsAppIcon } from '@/components/icons/WhatsAppIcon';
 
 export function Navbar() {
   const pathname = usePathname();
@@ -28,13 +25,13 @@ export function Navbar() {
           : 'bg-transparent',
       )}
     >
-      <nav className="container-px flex h-16 items-center justify-between py-3" aria-label="Main">
+      <nav className="container-px flex h-14 items-center justify-between py-2 sm:h-16 sm:py-3" aria-label="Main">
         <Link href="/" className="flex items-center gap-3" aria-label={siteConfig.name}>
-          <span className="flex h-11 items-center justify-center rounded-2xl bg-maroon px-3 font-hindi text-base font-bold text-gold-200">
+          <span className="flex h-9 items-center justify-center rounded-xl bg-maroon px-2.5 font-hindi text-sm font-bold text-gold-200 sm:h-11 sm:rounded-2xl sm:px-3 sm:text-base">
             राधे
           </span>
           <span className="flex flex-col leading-none">
-            <span className="font-display text-lg font-semibold text-maroon dark:text-gold-100">
+            <span className="font-display text-base font-semibold text-maroon dark:text-gold-100 sm:text-lg">
               Radhe Radhe
             </span>
             <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-terracotta">
@@ -66,15 +63,6 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <a
-            href={whatsappLink(waMessages.general)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-whatsapp hidden md:inline-flex"
-          >
-            <WhatsAppIcon className="h-4 w-4" />
-            WhatsApp
-          </a>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -112,17 +100,6 @@ export function Navbar() {
                   </Link>
                 </li>
               ))}
-              <li className="mt-2">
-                <a
-                  href={whatsappLink(waMessages.general)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-whatsapp w-full"
-                >
-                  <WhatsAppIcon className="h-4 w-4" />
-                  Chat on WhatsApp
-                </a>
-              </li>
             </ul>
           </motion.div>
         )}

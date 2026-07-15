@@ -33,44 +33,77 @@ const notoDevanagari = Noto_Sans_Devanagari({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Handcrafted Clay Karwa & Handicrafts`,
+    default: `${siteConfig.name} | Handcrafted Clay Karwa & Handicrafts | Saharanpur`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: siteConfig.keywords,
-  authors: [{ name: siteConfig.name }],
+  authors: [{ name: siteConfig.name, url: siteConfig.url }],
   creator: siteConfig.name,
+  publisher: siteConfig.name,
   applicationName: siteConfig.name,
-  alternates: { canonical: '/' },
+  category: 'Handicrafts',
+  classification: 'Handicrafts, Clay Products, Women Self Help Group',
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-IN': '/',
+      'hi-IN': '/',
+    },
+  },
   openGraph: {
     type: 'website',
     locale: 'en_IN',
+    alternateLocale: 'hi_IN',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} | Handcrafted Clay Creations by Rural Women`,
+    title: `${siteConfig.name} | Handcrafted Clay Karwa & Handicrafts from Rural Women Artisans`,
     description: siteConfig.description,
+    countryName: 'India',
     images: [
       {
         url: '/images/og.jpg',
         width: 1200,
         height: 630,
-        alt: siteConfig.name,
+        alt: `${siteConfig.name} — Handcrafted Clay Karwa and Handicrafts by Rural Women of Saharanpur`,
+        type: 'image/jpeg',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${siteConfig.name} | Handcrafted Clay Creations`,
+    title: `${siteConfig.name} | Handcrafted Clay Creations by Rural Women`,
     description: siteConfig.description,
     images: ['/images/og.jpg'],
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: siteConfig.verification.google || undefined,
+    yandex: siteConfig.verification.yandex || undefined,
+    other: {
+      ...(siteConfig.verification.bing ? { 'msvalidate.01': siteConfig.verification.bing } : {}),
+    },
   },
   icons: {
     icon: '/favicon.svg',
+  },
+  other: {
+    'geo.region': 'IN-UP',
+    'geo.placename': 'Saharanpur',
+    'geo.position': `${siteConfig.geo.latitude};${siteConfig.geo.longitude}`,
+    ICBM: `${siteConfig.geo.latitude}, ${siteConfig.geo.longitude}`,
   },
 };
 

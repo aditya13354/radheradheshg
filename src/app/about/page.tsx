@@ -8,10 +8,17 @@ import { CtaBand } from '@/components/sections/CtaBand';
 import { siteConfig } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'About Us',
+  title: 'About Us | Women-Led Handicraft Collective, Saharanpur',
   description:
-    'The story of Radhe Radhe Self Help Group \u2014 a women-led handicraft collective from Saharanpur empowering rural women through handmade clay creations, supported under UPSRLM / NRLM.',
+    'Radhe Radhe Self Help Group is a women-led handicraft collective from Village Ugrah, Saharanpur, Uttar Pradesh. We empower rural women through handmade clay creations, supported under UPSRLM / NRLM government scheme. Know our story, values and journey.',
+  keywords: ['Women Self Help Group Saharanpur', 'UPSRLM Self Help Group', 'NRLM Handicraft Group', 'Rural Women Artisans UP', 'Women Empowerment Handicrafts India'],
   alternates: { canonical: '/about' },
+  openGraph: {
+    title: 'About Us | Radhe Radhe Self Help Group',
+    description: 'A women-led handicraft collective from Saharanpur empowering rural women through handmade clay creations.',
+    url: '/about',
+    type: 'website',
+  },
 };
 
 const values = [

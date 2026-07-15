@@ -26,14 +26,14 @@ export function GalleryPreview() {
           initial="hidden"
           whileInView="show"
           viewport={viewportOnce}
-          className="mt-14 grid auto-rows-[180px] grid-cols-2 gap-4 sm:auto-rows-[220px] lg:grid-cols-4"
+          className="mt-10 grid auto-rows-[140px] grid-cols-2 gap-3 sm:mt-14 sm:auto-rows-[220px] sm:gap-4 lg:grid-cols-4"
         >
           {items.map((item, index) => (
             <motion.div
               key={item.src}
               variants={fadeUp}
               className={cn(
-                'group relative overflow-hidden rounded-3xl border border-maroon/10 shadow-soft dark:border-gold/10',
+                'group relative overflow-hidden rounded-xl border border-maroon/10 shadow-soft dark:border-gold/10 sm:rounded-3xl',
                 index === 0 && 'lg:col-span-2 lg:row-span-2',
                 index === 3 && 'sm:col-span-2 lg:col-span-1',
               )}
@@ -53,8 +53,8 @@ export function GalleryPreview() {
           ))}
         </motion.div>
 
-        <div className="mt-12 text-center">
-          <Link href="/gallery" className="btn-primary">
+        <div className="mt-8 text-center sm:mt-12">
+          <Link href="/gallery" className="btn-outline">
             View Full Gallery
             <ArrowRight className="h-4 w-4" />
           </Link>

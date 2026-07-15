@@ -22,7 +22,7 @@ export function ProductsGrid() {
           initial="hidden"
           whileInView="show"
           viewport={viewportOnce}
-          className="mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-3"
+          className="mt-10 grid gap-5 sm:mt-14 sm:gap-8 md:grid-cols-2 xl:grid-cols-3"
         >
           {products.map((product) => (
             <ProductCard key={product.slug} product={product} />
@@ -43,7 +43,7 @@ export function ProductsGrid() {
             initial="hidden"
             whileInView="show"
             viewport={viewportOnce}
-            className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+            className="mt-10 grid gap-4 sm:mt-14 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3"
           >
             {collections.map((collection) => (
               <CollectionCard key={collection.slug} collection={collection} />

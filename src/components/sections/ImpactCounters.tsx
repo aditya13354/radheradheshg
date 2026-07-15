@@ -15,16 +15,16 @@ function StatCard({ stat }: { stat: ImpactStat }) {
   return (
     <motion.div
       variants={fadeUp}
-      className="rounded-2xl border border-ink/10 bg-white p-8 text-center shadow-soft dark:border-white/10 dark:bg-white/5"
+      className="rounded-2xl border border-ink/10 bg-white p-4 text-center shadow-soft dark:border-white/10 dark:bg-white/5 sm:p-8"
     >
       <span
         ref={ref}
-        className="font-display text-4xl font-bold text-maroon dark:text-gold-100 sm:text-5xl"
+        className="font-display text-2xl font-bold text-maroon dark:text-gold-100 sm:text-4xl md:text-5xl"
       >
         {formatted}
         {stat.suffix}
       </span>
-      <p className="mt-3 text-sm font-medium uppercase tracking-wide text-ink/60 dark:text-ivory/70">
+      <p className="mt-2 text-[10px] font-medium uppercase tracking-wide text-ink/60 dark:text-ivory/70 sm:mt-3 sm:text-sm">
         {stat.label}
       </p>
     </motion.div>
@@ -46,7 +46,7 @@ export function ImpactCounters() {
           initial="hidden"
           whileInView="show"
           viewport={viewportOnce}
-          className="mt-14 grid grid-cols-2 gap-5 lg:grid-cols-3"
+          className="mt-10 grid grid-cols-2 gap-3 sm:mt-14 sm:gap-5 lg:grid-cols-3"
         >
           {impactStats.map((stat) => (
             <StatCard key={stat.label} stat={stat} />

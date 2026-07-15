@@ -3,15 +3,21 @@ import { HeartHandshake, Home, GraduationCap, Sprout } from 'lucide-react';
 import { PageHero } from '@/components/sections/PageHero';
 import { SmartImage } from '@/components/ui/SmartImage';
 import { SectionHeading } from '@/components/ui/SectionHeading';
-import { ImpactCounters } from '@/components/sections/ImpactCounters';
 import { CtaBand } from '@/components/sections/CtaBand';
 import { waMessages } from '@/lib/whatsapp';
 
 export const metadata: Metadata = {
-  title: 'Our Mission',
+  title: 'Our Mission | Empowering Rural Women Through Handicrafts',
   description:
-    'Every purchase from Radhe Radhe Self Help Group supports rural women with sustainable livelihoods. Discover the human impact behind every handcrafted clay creation.',
+    'Every purchase from Radhe Radhe Self Help Group supports rural women of Saharanpur with sustainable livelihoods. Discover the human impact behind every handcrafted clay creation — women empowerment through traditional Indian craftsmanship.',
+  keywords: ['Women Empowerment India', 'Rural Women Livelihoods', 'Sustainable Handicrafts', 'Self Help Group Mission', 'Artisan Women India'],
   alternates: { canonical: '/mission' },
+  openGraph: {
+    title: 'Our Mission | Radhe Radhe Self Help Group',
+    description: 'Empowering rural women with sustainable livelihoods through traditional clay craftsmanship.',
+    url: '/mission',
+    type: 'website',
+  },
 };
 
 const stories = [
@@ -109,11 +115,9 @@ export default function MissionPage() {
         </div>
       </section>
 
-      <ImpactCounters />
       <CtaBand
         heading="Empower a Family Today"
         subheading="Choose handcrafted. Choose meaningful. Choose to make a difference with every order you place."
-        message={waMessages.general}
       />
     </>
   );

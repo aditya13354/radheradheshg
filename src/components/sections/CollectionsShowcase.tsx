@@ -22,7 +22,7 @@ export function CollectionsShowcase() {
         initial="hidden"
         whileInView="show"
         viewport={viewportOnce}
-        className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        className="mt-10 grid gap-4 sm:mt-14 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3"
       >
         {collections.slice(0, 6).map((collection) => (
           <CollectionCard key={collection.slug} collection={collection} />

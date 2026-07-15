@@ -8,8 +8,8 @@ import { fadeUp, staggerContainer, viewportOnce } from '@/animations/variants';
 
 export function MissionPreview() {
   return (
-    <section className="relative overflow-hidden bg-maroon-900 py-24 text-ivory">
-      <div className="container-px relative grid items-center gap-14 lg:grid-cols-2">
+    <section className="relative overflow-hidden bg-maroon-900 py-14 text-ivory sm:py-24">
+      <div className="container-px relative grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -30,7 +30,7 @@ export function MissionPreview() {
           </motion.h2>
           <motion.p
             variants={fadeUp}
-            className="mt-5 text-base leading-relaxed text-ivory/80 sm:text-lg"
+            className="mt-4 text-sm leading-relaxed text-ivory/80 sm:mt-5 sm:text-base lg:text-lg"
           >
             Behind every Karwa is a woman who woke up with a dream — of
             educating her children, supporting her home and standing on her own
@@ -40,7 +40,7 @@ export function MissionPreview() {
 
           <motion.blockquote
             variants={fadeUp}
-            className="mt-8 rounded-2xl border border-gold/20 bg-white/5 p-6"
+            className="mt-6 rounded-xl border border-gold/20 bg-white/5 p-4 sm:mt-8 sm:rounded-2xl sm:p-6"
           >
             <p className="font-display text-lg italic text-gold-100">
               &ldquo;When you gift our handmade Karwa, you gift a mother the

@@ -23,7 +23,7 @@ export function WhyChooseUs() {
           initial="hidden"
           whileInView="show"
           viewport={viewportOnce}
-          className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-10 grid gap-4 sm:mt-14 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3"
         >
           {features.slice(0, 6).map((feature) => {
             const Icon = (Icons[feature.icon as IconName] ??
@@ -32,7 +32,7 @@ export function WhyChooseUs() {
               <motion.div
                 key={feature.title}
                 variants={fadeUp}
-                className="group rounded-2xl border border-ink/10 bg-ivory p-6 transition-colors duration-200 hover:border-gold/40 dark:border-gold/10 dark:bg-maroon-800"
+                className="group rounded-2xl border border-ink/10 bg-ivory p-5 transition-colors duration-200 hover:border-gold/40 dark:border-gold/10 dark:bg-maroon-800 sm:p-6"
               >
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-maroon text-gold-200">
                   <Icon className="h-6 w-6" />

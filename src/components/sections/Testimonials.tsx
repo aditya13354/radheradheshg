@@ -20,13 +20,13 @@ export function Testimonials() {
         initial="hidden"
         whileInView="show"
         viewport={viewportOnce}
-        className="mt-14 grid gap-6 md:grid-cols-2"
+        className="mt-10 grid gap-4 sm:mt-14 sm:gap-6 md:grid-cols-2"
       >
         {testimonials.map((t) => (
           <motion.figure
             key={t.name}
             variants={fadeUp}
-            className="relative rounded-3xl border border-maroon/10 bg-white/70 p-8 shadow-soft dark:border-gold/10 dark:bg-maroon-800"
+            className="relative rounded-2xl border border-maroon/10 bg-white/70 p-5 shadow-soft dark:border-gold/10 dark:bg-maroon-800 sm:rounded-3xl sm:p-8"
           >
             <Quote className="absolute right-6 top-6 h-10 w-10 text-gold/20" />
             <div className="flex gap-1 text-gold-500">

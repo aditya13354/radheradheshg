@@ -19,10 +19,17 @@ import { whatsappLink, waMessages, telLink } from '@/lib/whatsapp';
 import { Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Bulk Orders, Wholesale & OEM',
+  title: 'Bulk Orders, Wholesale & OEM | Clay Karwa Manufacturer India',
   description:
-    'Wholesale, bulk and OEM manufacturing of handmade clay Karwas and handicrafts. Private label, custom design, safe packaging and pan-India delivery from Radhe Radhe SHG.',
+    'Wholesale, bulk and OEM manufacturing of handmade clay Karwas, terracotta products and handicrafts. Private label, custom design, safe packaging and pan-India delivery. Factory-direct pricing from Radhe Radhe Self Help Group, Saharanpur.',
+  keywords: ['Wholesale Clay Karwa', 'Bulk Order Handicrafts', 'OEM Clay Products India', 'Private Label Handicrafts', 'Clay Karwa Manufacturer', 'Wholesale Handicrafts Supplier', 'Corporate Gifts Handicraft India'],
   alternates: { canonical: '/bulk-orders' },
+  openGraph: {
+    title: 'Bulk Orders & Wholesale | Radhe Radhe Self Help Group',
+    description: 'Wholesale, bulk & OEM manufacturing of clay Karwas and handicrafts. Factory-direct pricing, pan-India delivery.',
+    url: '/bulk-orders',
+    type: 'website',
+  },
 };
 
 const services = [
@@ -173,8 +180,7 @@ export default function BulkOrdersPage() {
 
       <CtaBand
         heading="Become a Dealer or Retail Partner"
-        subheading="Join a growing network of partners sourcing premium, purpose-driven handicrafts. Let's build something meaningful together."
-        message={waMessages.dealer}
+        subheading="Join a growing network of partners sourcing premium, purpose-driven handicrafts. Call us to get started."
       />
     </>
   );

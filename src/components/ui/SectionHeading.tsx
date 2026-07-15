@@ -34,7 +34,7 @@ export function SectionHeading({
         className,
       )}
     >
-      {eyebrow && <span className="eyebrow mb-5">{eyebrow}</span>}
+      {eyebrow && <span className="eyebrow mb-3 sm:mb-5">{eyebrow}</span>}
       <h2
         className={cn(
           'heading-lg font-semibold',
@@ -46,7 +46,7 @@ export function SectionHeading({
       {subtitle && (
         <p
           className={cn(
-            'mt-5 text-base leading-relaxed sm:text-lg',
+            'mt-3 text-sm leading-relaxed sm:mt-5 sm:text-base lg:text-lg',
             light ? 'text-ivory/80' : 'text-ink/70 dark:text-ivory/70',
           )}
         >

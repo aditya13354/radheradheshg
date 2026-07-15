@@ -24,7 +24,7 @@ export function Customization() {
           initial="hidden"
           whileInView="show"
           viewport={viewportOnce}
-          className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
+          className="mt-10 grid gap-3 sm:mt-14 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4"
         >
           {customizationOptions.map((option) => (
             <motion.div

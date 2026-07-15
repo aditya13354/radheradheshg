@@ -3,13 +3,19 @@ import { PageHero } from '@/components/sections/PageHero';
 import { ProductsGrid } from '@/components/sections/ProductsGrid';
 import { Customization } from '@/components/sections/Customization';
 import { CtaBand } from '@/components/sections/CtaBand';
-import { waMessages } from '@/lib/whatsapp';
 
 export const metadata: Metadata = {
-  title: 'Products & Collections',
+  title: 'Products & Collections | Handmade Clay Karwa, Pots & Handicrafts',
   description:
-    'Explore handcrafted clay Karwas, decorative pots, Navgrah Samrani cups and festive handicrafts by Radhe Radhe Self Help Group. Retail, wholesale, bulk & OEM available.',
+    'Explore handcrafted clay Karwas, decorative clay pots, Navgrah Samrani cups, terracotta diyas and festive handicrafts by Radhe Radhe Self Help Group, Saharanpur. Retail, wholesale, bulk & OEM available. Buy Karwa for Karwa Chauth.',
+  keywords: ['Buy Clay Karwa', 'Handmade Karwa Chauth Karwa', 'Decorative Clay Pots Online', 'Navgrah Samrani Cup', 'Terracotta Products India', 'Festival Decoration Items', 'Wholesale Clay Products', 'Handcrafted Pottery India'],
   alternates: { canonical: '/products' },
+  openGraph: {
+    title: 'Products & Collections | Radhe Radhe Self Help Group',
+    description: 'Premium handcrafted clay Karwas, decorative pots and festive handicrafts. Made by rural women artisans of Saharanpur. Wholesale & retail.',
+    url: '/products',
+    type: 'website',
+  },
 };
 
 export default function ProductsPage() {
@@ -24,8 +30,7 @@ export default function ProductsPage() {
       <Customization />
       <CtaBand
         heading="Found Something You Love?"
-        subheading="Message us for retail, wholesale or bulk pricing, or to customize any design for your brand or event."
-        message={waMessages.pricing}
+        subheading="Call us for retail, wholesale or bulk pricing, or tap WhatsApp to customize any design for your brand or event."
       />
     </>
   );

@@ -12,10 +12,17 @@ import {
 } from '@/lib/whatsapp';
 
 export const metadata: Metadata = {
-  title: 'Contact Us',
+  title: 'Contact Us | WhatsApp, Call or Visit — Saharanpur, UP',
   description:
-    'Contact Radhe Radhe Self Help Group for handmade clay Karwas, wholesale, bulk and custom orders. WhatsApp, call or email us \u2014 based in Village Ugrah, Saharanpur, Uttar Pradesh.',
+    'Contact Radhe Radhe Self Help Group for handmade clay Karwas, wholesale, bulk and custom orders. WhatsApp +91 9719266605, call or email us. Based in Village Ugrah, Saharanpur, Uttar Pradesh 247001.',
+  keywords: ['Contact Radhe Radhe', 'Handicraft Shop Saharanpur', 'Clay Karwa Order WhatsApp', 'Wholesale Handicrafts Contact'],
   alternates: { canonical: '/contact' },
+  openGraph: {
+    title: 'Contact Us | Radhe Radhe Self Help Group',
+    description: 'WhatsApp, call or email us for clay Karwas, wholesale pricing and custom orders. Based in Saharanpur, UP.',
+    url: '/contact',
+    type: 'website',
+  },
 };
 
 const quickActions = [
@@ -39,10 +46,10 @@ export default function ContactPage() {
       />
 
       <section className="section container-px">
-        <div className="grid gap-10 lg:grid-cols-2">
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-10">
           {/* Contact info */}
           <div>
-            <div className="rounded-3xl border border-maroon/10 bg-white/70 p-8 shadow-soft dark:border-gold/10 dark:bg-maroon-800">
+            <div className="rounded-2xl border border-maroon/10 bg-white/70 p-5 shadow-soft dark:border-gold/10 dark:bg-maroon-800 sm:rounded-3xl sm:p-8">
               <h2 className="font-display text-2xl font-semibold text-maroon dark:text-gold-100">
                 {siteConfig.name}
               </h2>

@@ -2,23 +2,56 @@ import type { MetadataRoute } from 'next';
 import { siteConfig } from '@/lib/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = [
-    '',
-    '/products',
-    '/gallery',
-    '/about',
-    '/mission',
-    '/bulk-orders',
-    '/contact',
-    '/privacy-policy',
-  ];
-
   const lastModified = new Date();
 
-  return routes.map((route) => ({
-    url: `${siteConfig.url}${route}`,
-    lastModified,
-    changeFrequency: route === '' ? 'weekly' : 'monthly',
-    priority: route === '' ? 1 : route === '/products' ? 0.9 : 0.7,
-  }));
+  return [
+    {
+      url: siteConfig.url,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 1.0,
+    },
+    {
+      url: `${siteConfig.url}/products`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${siteConfig.url}/bulk-orders`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${siteConfig.url}/gallery`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${siteConfig.url}/about`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${siteConfig.url}/mission`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
+      url: `${siteConfig.url}/contact`,
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${siteConfig.url}/privacy-policy`,
+      lastModified,
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+  ];
 }

@@ -21,15 +21,15 @@ export function TrustBar() {
         initial="hidden"
         whileInView="show"
         viewport={viewportOnce}
-        className="container-px grid grid-cols-2 gap-6 py-8 sm:grid-cols-3 lg:grid-cols-6"
+        className="container-px grid grid-cols-3 gap-4 py-5 sm:grid-cols-3 sm:gap-6 sm:py-8 lg:grid-cols-6"
       >
         {items.map(({ icon: Icon, label }) => (
           <div
             key={label}
-            className="flex flex-col items-center gap-2 text-center"
+            className="flex flex-col items-center gap-1.5 text-center sm:gap-2"
           >
-            <Icon className="h-6 w-6 text-gold-500" />
-            <span className="text-xs font-semibold uppercase tracking-wide text-ink/70 dark:text-ivory/70">
+            <Icon className="h-5 w-5 text-gold-500 sm:h-6 sm:w-6" />
+            <span className="text-[10px] font-semibold uppercase tracking-wide text-ink/70 dark:text-ivory/70 sm:text-xs">
               {label}
             </span>
           </div>

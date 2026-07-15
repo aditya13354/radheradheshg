@@ -8,13 +8,13 @@ import { fadeUp, viewportOnce } from '@/animations/variants';
 
 export function FestivalBanner() {
   return (
-    <section className="container-px py-8">
+    <section className="container-px py-4 sm:py-8">
       <motion.div
         variants={fadeUp}
         initial="hidden"
         whileInView="show"
         viewport={viewportOnce}
-        className="relative overflow-hidden rounded-3xl border border-gold/30 bg-gold-gradient px-6 py-6 sm:px-10"
+        className="relative overflow-hidden rounded-2xl border border-gold/30 bg-gold-gradient px-4 py-5 sm:rounded-3xl sm:px-10 sm:py-6"
       >
         <div className="relative flex flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
           <div className="flex items-center gap-4">

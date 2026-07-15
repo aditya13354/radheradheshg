@@ -13,12 +13,12 @@ interface PageHeroProps {
 
 export function PageHero({ eyebrow, title, subtitle, children }: PageHeroProps) {
   return (
-    <section className="relative overflow-hidden bg-ivory pt-32 dark:bg-maroon-900">
+    <section className="relative overflow-hidden bg-ivory pt-24 dark:bg-maroon-900 sm:pt-32">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         animate="show"
-        className="container-px relative pb-16 text-center"
+        className="container-px relative pb-10 text-center sm:pb-16"
       >
         {eyebrow && (
           <motion.span variants={fadeUp} className="eyebrow mb-5 justify-center">

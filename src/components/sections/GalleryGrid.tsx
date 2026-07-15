@@ -43,14 +43,14 @@ export function GalleryGrid() {
   return (
     <section className="section container-px">
       {/* Filters */}
-      <div className="flex flex-wrap justify-center gap-2">
+      <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-2 sm:mx-0 sm:flex-wrap sm:justify-center sm:overflow-x-visible sm:px-0 sm:pb-0">
         {categories.map((cat) => (
           <button
             key={cat}
             type="button"
             onClick={() => setFilter(cat)}
             className={cn(
-              'rounded-full px-5 py-2 text-sm font-medium transition-all',
+              'shrink-0 rounded-full px-4 py-2 text-xs font-medium transition-all sm:px-5 sm:text-sm',
               filter === cat
                 ? 'bg-maroon-gradient text-ivory shadow-soft'
                 : 'border border-maroon/15 text-ink/70 hover:border-maroon/40 dark:border-gold/20 dark:text-ivory/70',
