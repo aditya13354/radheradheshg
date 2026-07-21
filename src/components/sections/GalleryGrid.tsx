@@ -10,12 +10,11 @@ import type { GalleryCategory } from '@/types';
 
 const categories: (GalleryCategory | 'All')[] = [
   'All',
-  'Products',
-  'Women Artisans',
-  'Workshop',
-  'Manufacturing',
-  'Events',
-  'Exhibitions',
+  'Traditional Karwa',
+  'Premium Painted',
+  'Swastik Karwa',
+  'Designer Latkan',
+  'Decorative',
 ];
 
 export function GalleryGrid() {

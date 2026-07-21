@@ -14,6 +14,9 @@
 .DS_Store
 *.pem
 
+# raw source images (optimized web versions live in public/images/products)
+/product-images
+
 # debug
 npm-debug.log*
 yarn-debug.log*

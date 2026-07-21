@@ -77,8 +77,8 @@ export default function MissionPage() {
           </div>
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-ink/10 shadow-soft">
             <SmartImage
-              src="/images/gallery/artisan-1.jpg"
-              alt="Rural woman artisan carefully hand-painting a clay Karwa"
+              src="/images/products/p16/1.jpg"
+              alt="Handcrafted Swastik Karwa with a lit diya on a festive brass thali"
               fill
               sizes="(max-width: 1024px) 90vw, 45vw"
               className="object-cover"

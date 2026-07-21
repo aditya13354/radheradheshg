@@ -7,8 +7,8 @@ import { CtaBand } from '@/components/sections/CtaBand';
 export const metadata: Metadata = {
   title: 'Products & Collections | Handmade Clay Karwa, Pots & Handicrafts',
   description:
-    'Explore handcrafted clay Karwas, decorative clay pots, Navgrah Samrani cups, terracotta diyas and festive handicrafts by Radhe Radhe Self Help Group, Saharanpur. Retail, wholesale, bulk & OEM available. Buy Karwa for Karwa Chauth.',
-  keywords: ['Buy Clay Karwa', 'Handmade Karwa Chauth Karwa', 'Decorative Clay Pots Online', 'Navgrah Samrani Cup', 'Terracotta Products India', 'Festival Decoration Items', 'Wholesale Clay Products', 'Handcrafted Pottery India'],
+    'Explore handcrafted clay Karwas by Radhe Radhe Self Help Group, Saharanpur — traditional, premium hand-painted, Swastik, designer latkan and mirror-work Karwas for Karwa Chauth. Retail, wholesale, bulk & OEM available. Buy Karwa for Karwa Chauth.',
+  keywords: ['Buy Clay Karwa', 'Handmade Karwa Chauth Karwa', 'Designer Latkan Karwa', 'Swastik Karwa', 'Premium Painted Karwa', 'Mirror Work Karwa', 'Wholesale Clay Karwa', 'Handcrafted Karwa India'],
   alternates: { canonical: '/products' },
   openGraph: {
     title: 'Products & Collections | Radhe Radhe Self Help Group',

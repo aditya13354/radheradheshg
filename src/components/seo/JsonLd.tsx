@@ -92,22 +92,22 @@ export function JsonLd() {
         },
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
-          name: 'Handcrafted Clay Products',
+          name: 'Handcrafted Clay Karwas',
           itemListElement: [
             {
               '@type': 'OfferCatalog',
-              name: 'Clay Karwas',
-              description: 'Handmade clay Karwas for Karwa Chauth and festive occasions',
+              name: 'Traditional & Premium Painted Karwas',
+              description: 'Handmade red and maroon clay Karwas with golden sequin lace and hand-painted mandala detailing for Karwa Chauth',
             },
             {
               '@type': 'OfferCatalog',
-              name: 'Decorative Clay Pots',
-              description: 'Hand-painted decorative clay pots and planters',
+              name: 'Designer Latkan Karwas',
+              description: 'Pink and yellow designer Karwas with colourful latkans, coin sequins and golden lace',
             },
             {
               '@type': 'OfferCatalog',
-              name: 'Festival & Puja Items',
-              description: 'Navgrah Samrani cups, diyas, and festival décor',
+              name: 'Swastik & Decorative Karwas',
+              description: 'Auspicious Swastik-motif Karwas and mirror-work tealight pieces for festivals and gifting',
             },
           ],
         },
@@ -132,7 +132,7 @@ export function JsonLd() {
             name: 'What products does Radhe Radhe Self Help Group make?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'We handcraft premium clay Karwas for Karwa Chauth, decorative clay pots, Navgrah Samrani cups, festive diyas, and custom handicrafts. All products are made by rural women artisans in Saharanpur, Uttar Pradesh.',
+              text: 'We handcraft premium clay Karwas for Karwa Chauth in every design — traditional, premium hand-painted, Swastik, designer latkan and mirror-work Karwas. All products are made by rural women artisans in Saharanpur, Uttar Pradesh.',
             },
           },
           {

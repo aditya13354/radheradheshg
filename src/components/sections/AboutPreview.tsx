@@ -23,8 +23,8 @@ export function AboutPreview() {
               className="relative aspect-[3/4] overflow-hidden rounded-3xl border border-gold/20 shadow-soft"
             >
               <SmartImage
-                src="/images/gallery/artisan-1.jpg"
-                alt="Rural woman artisan hand-painting a clay Karwa"
+                src="/images/products/p1/1.jpg"
+                alt="A handcrafted Radhe Radhe Karwa on a festive Karwa Chauth thali"
                 fill
                 sizes="45vw"
                 className="object-cover"
@@ -33,8 +33,8 @@ export function AboutPreview() {
             <motion.div variants={fadeUp} className="mt-8 space-y-4">
               <div className="relative aspect-square overflow-hidden rounded-3xl border border-gold/20 shadow-soft">
                 <SmartImage
-                  src="/images/gallery/workshop-1.jpg"
-                  alt="Inside the Radhe Radhe handicraft workshop"
+                  src="/images/products/p5/1.jpg"
+                  alt="A handcrafted Karwa being finished with golden sequin lace"
                   fill
                   sizes="45vw"
                   className="object-cover"

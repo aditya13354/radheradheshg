@@ -50,8 +50,8 @@ export default function AboutPage() {
           <div className="relative">
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-ink/10 shadow-soft">
               <SmartImage
-                src="/images/gallery/event-1.jpg"
-                alt="Radhe Radhe Self Help Group exhibition stall"
+                src="/images/products/p1/1.jpg"
+                alt="A handcrafted Radhe Radhe Karwa on a festive Karwa Chauth thali"
                 fill
                 sizes="(max-width: 1024px) 90vw, 45vw"
                 className="object-cover"

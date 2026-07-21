@@ -5,7 +5,10 @@ export interface Product {
   category: string;
   tagline: string;
   description: string;
+  /** Primary/cover image. */
   image: string;
+  /** Full photo gallery for the product (includes the cover image first). */
+  images: string[];
   badges: string[];
   features: string[];
   uses: string[];
@@ -29,12 +32,11 @@ export interface GalleryItem {
 }
 
 export type GalleryCategory =
-  | 'Products'
-  | 'Workshop'
-  | 'Women Artisans'
-  | 'Manufacturing'
-  | 'Events'
-  | 'Exhibitions';
+  | 'Traditional Karwa'
+  | 'Premium Painted'
+  | 'Swastik Karwa'
+  | 'Designer Latkan'
+  | 'Decorative';
 
 export interface Testimonial {
   name: string;

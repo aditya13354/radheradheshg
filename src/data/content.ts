@@ -118,20 +118,25 @@ export const faqs: FaqItem[] = [
 ];
 
 /**
- * Gallery items reference photos placed in /public/images/gallery.
- * Provided artisan, event and product photographs should be dropped in here.
+ * Gallery items reference the real product photographs in
+ * /public/images/products. The gallery showcases our handcrafted Karwa range
+ * across every design family.
  */
 export const galleryItems: GalleryItem[] = [
-  { src: '/images/gallery/product-1.jpg', alt: 'Handcrafted maroon and gold Om Karwa', category: 'Products', featured: true },
-  { src: '/images/gallery/product-2.jpg', alt: 'Designer latkan Karwa with tassels', category: 'Products' },
-  { src: '/images/gallery/product-3.jpg', alt: 'Swastik design festive Karwa', category: 'Products' },
-  { src: '/images/gallery/product-4.jpg', alt: 'Red decorative clay pot with golden lace', category: 'Products' },
-  { src: '/images/gallery/product-5.jpg', alt: 'Premium painted Karwa collection stacked', category: 'Products', featured: true },
-  { src: '/images/gallery/product-6.jpg', alt: 'Navgrah Samrani cup', category: 'Products' },
-  { src: '/images/gallery/artisan-1.jpg', alt: 'Rural woman artisan hand-painting a Karwa', category: 'Women Artisans', featured: true },
-  { src: '/images/gallery/artisan-2.jpg', alt: 'Women artisans decorating clay pots', category: 'Women Artisans' },
-  { src: '/images/gallery/workshop-1.jpg', alt: 'Inside the Radhe Radhe workshop', category: 'Workshop' },
-  { src: '/images/gallery/manufacturing-1.jpg', alt: 'Unpainted clay pots drying in the workshop', category: 'Manufacturing' },
-  { src: '/images/gallery/event-1.jpg', alt: 'Radhe Radhe SHG exhibition stall', category: 'Events', featured: true },
-  { src: '/images/gallery/exhibition-1.jpg', alt: 'Officials visiting the Radhe Radhe exhibition stall', category: 'Exhibitions' },
+  { src: '/images/products/p13/1.jpg', alt: 'Premium lidded maroon Karwa with double golden sequin borders', category: 'Premium Painted', featured: true },
+  { src: '/images/products/p16/1.jpg', alt: 'Swastik Karwa with a lit diya on a brass thali', category: 'Swastik Karwa', featured: true },
+  { src: '/images/products/p1/1.jpg', alt: 'Rose-pink designer latkan Karwa with colourful tassels', category: 'Designer Latkan', featured: true },
+  { src: '/images/products/p5/1.jpg', alt: 'Classic red Karwa with golden coin sequin lace', category: 'Traditional Karwa', featured: true },
+  { src: '/images/products/p11/1.jpg', alt: 'Maroon Karwa hand-painted with a golden mandala', category: 'Premium Painted' },
+  { src: '/images/products/p7/1.jpg', alt: 'Pink mirror-work Karwa used as a festive tealight', category: 'Decorative', featured: true },
+  { src: '/images/products/p14/1.jpg', alt: 'Swastik Karwa with sun and shell motifs', category: 'Swastik Karwa' },
+  { src: '/images/products/p12/1.jpg', alt: 'Traditional spouted red Karwa with coin tassels', category: 'Traditional Karwa' },
+  { src: '/images/products/p2/1.jpg', alt: 'Bright yellow designer Karwa with bold fan motifs', category: 'Designer Latkan' },
+  { src: '/images/products/p15/1.jpg', alt: 'Swastik Karwa with twin golden sequin borders', category: 'Swastik Karwa' },
+  { src: '/images/products/p8/1.jpg', alt: 'Lidded pink Karwa with spiral bel-buti hand-painting', category: 'Designer Latkan' },
+  { src: '/images/products/p10/1.jpg', alt: 'Red traditional Karwa with a mirror-work band', category: 'Traditional Karwa' },
+  { src: '/images/products/p9/1.jpg', alt: 'Pink designer Karwa with a golden sunburst motif', category: 'Designer Latkan' },
+  { src: '/images/products/p3/1.jpg', alt: 'Pink Karwa with peacock-green fan artwork', category: 'Designer Latkan' },
+  { src: '/images/products/p4/1.jpg', alt: 'Lidded yellow Karwa with red leaf detailing', category: 'Designer Latkan' },
+  { src: '/images/products/p6/1.jpg', alt: 'Lidded pink Karwa with fan and shell motifs', category: 'Designer Latkan' },
 ];

@@ -73,8 +73,8 @@ export function MissionPreview() {
         >
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-gold/20 shadow-soft">
             <SmartImage
-              src="/images/gallery/artisan-2.jpg"
-              alt="Women artisans decorating handcrafted clay products together"
+              src="/images/products/p13/1.jpg"
+              alt="A premium handcrafted Karwa detailed by hand with golden sequin lace"
               fill
               sizes="(max-width: 1024px) 90vw, 45vw"
               className="object-cover"
