@@ -4,6 +4,13 @@ All images live in `public/images/`. The site uses a graceful fallback, so it
 looks complete even before you add photos — but for launch, drop your real
 photographs at the exact paths below. Use **WebP or JPG**, optimized for web.
 
+## Source Standard
+
+Use only original photographs taken for Radhe Radhe Self Help Group or images
+licensed for this use. Do not use images with visible provider watermarks,
+including Gemini marks, and do not attempt to crop, blur, cover, or remove
+them. Replace a marked asset with the authorized original instead.
+
 > Tip: Keep product/hero images around 1200–1600px wide. The site auto-serves
 > AVIF/WebP via `next/image`.
 
@@ -21,7 +28,16 @@ photographs at the exact paths below. Use **WebP or JPG**, optimized for web.
 | --- | --- |
 | `hero-karwa.jpg` | Main hero image — your best premium Karwa shot (portrait 4:5) |
 
+The live hero uses this exact path. Replace it with an authorized photograph
+using the same filename.
+
 ## Products (`public/images/products/`)
+
+The live catalogue uses numbered galleries: `p1/1.jpg` through `p16/1.jpg`
+(with the additional numbered photos in each folder). Preserve the filenames
+when replacing them so the product cards and gallery update without code
+changes. Each image should show the actual listed product and be free of
+visible watermarks.
 
 | File | Product |
 | --- | --- |
